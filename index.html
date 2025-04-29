@@ -8,17 +8,19 @@
   </head>
   <body>
     <div class="container">
-      <!-- Controller -->
+      <!-- ===== Controller Section ===== -->
       <div class="section">
-        <h2>🧭 Controller</h2>
+        <h2>Controller</h2>
 
+        <!-- Waktu Saat Ini -->
         <div>
-          <h4>⏰ Waktu Saat Ini:</h4>
+          <h4>Waktu Saat Ini:</h4>
           <p id="current-time2"></p>
         </div>
 
+        <!-- Pengaturan Timer -->
         <div>
-          <h4>🛠️ Pengaturan Timer</h4>
+          <h4>Pengaturan Timer</h4>
           <input type="text" id="timer-title" placeholder="Judul Timer" />
           <input type="text" id="speaker-name" placeholder="Nama Pembicara" />
           <div class="timer-inputs">
@@ -33,15 +35,17 @@
           <button id="save-timer">Simpan Timer</button>
         </div>
 
+        <!-- Daftar Timer -->
         <div>
-          <h4>📋 Daftar Timer:</h4>
+          <h4>Daftar Timer:</h4>
           <ul id="timer-items"></ul>
         </div>
 
         <hr />
 
+        <!-- Kirim Pesan Pendek -->
         <div>
-          <h4>💬 Kirim Teks Pesan</h4>
+          <h4>Kirim Teks Pesan</h4>
           <textarea
             id="short-text"
             placeholder="Ketik teks pesan di sini..."
@@ -53,50 +57,53 @@
           </button>
         </div>
 
+        <!-- Pesan Pendek Terkirim -->
         <div>
-          <h4>📨 Teks Pesan yang Dikirim:</h4>
+          <h4>Teks Pesan yang Dikirim:</h4>
           <div id="ShowMessageController" class="message-box">-</div>
         </div>
 
+        <!-- Pidato Terkirim -->
         <div>
-          <h4>📝 Teks Pidato yang Dikirim:</h4>
+          <h4>Teks Pidato yang Dikirim:</h4>
           <div class="scroll-box" id="sent-long-text">-</div>
         </div>
 
         <button id="resetViewerBtn" class="reset-btn">RESET Viewer</button>
       </div>
 
-      <!-- Viewer -->
+      <!-- ===== Viewer Section ===== -->
       <div class="section">
-        <h2>👀 Viewer</h2>
+        <h2>Viewer</h2>
 
+        <!-- Informasi Viewer -->
         <div>
-          <h4>⏰ Waktu Saat Ini:</h4>
+          <h4>Waktu Saat Ini:</h4>
           <p id="current-time2"></p>
         </div>
 
         <div>
-          <h4>🎯 Judul Timer:</h4>
+          <h4>Judul Timer:</h4>
           <p id="viewer-title">-</p>
         </div>
 
         <div>
-          <h4>🧑 Nama Pembicara:</h4>
+          <h4>Nama Pembicara:</h4>
           <p id="viewer-speaker">-</p>
         </div>
 
         <div>
-          <h4>⏳ Timer Berjalan:</h4>
+          <h4>Timer Berjalan:</h4>
           <p id="viewer-timer">00:00</p>
         </div>
 
         <div>
-          <h4>💬 Pesan:</h4>
+          <h4>Pesan:</h4>
           <p id="text-from-part1">-</p>
         </div>
 
         <div>
-          <h4>📝 Teks Pidato yang Dikirim:</h4>
+          <h4>Teks Pidato yang Dikirim:</h4>
           <div class="scroll-box" id="text-from-part2">-</div>
         </div>
       </div>

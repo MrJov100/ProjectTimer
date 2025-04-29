@@ -1,3 +1,4 @@
+// ===== WAKTU SEKARANG (Realtime Clock) =====
 function updateTime() {
   const now = new Date();
   const timeString = now.toLocaleTimeString();
@@ -13,7 +14,7 @@ let activeTimer = null;
 let timerInterval = null;
 let isPaused = false;
 
-// Input Elements
+// ===== ELEMEN YANG DIGUNAKAN =====
 const timerTitleInput = document.getElementById("timer-title");
 const speakerNameInput = document.getElementById("speaker-name");
 const minutesInput = document.getElementById("minutes");
@@ -27,7 +28,7 @@ const sendTextBtn = document.getElementById("send-text");
 const clearTextBtn = document.getElementById("clear-text");
 const saveTimerBtn = document.getElementById("save-timer");
 
-// Display Elements
+// Viewer Display Elements
 const sentLongText = document.getElementById("sent-long-text");
 const ShowMessageController = document.getElementById("ShowMessageController");
 
@@ -37,6 +38,7 @@ const viewerTitle = document.getElementById("viewer-title");
 const viewerSpeaker = document.getElementById("viewer-speaker");
 const viewerTimer = document.getElementById("viewer-timer");
 
+// ===== SIMPAN TIMER KE LIST =====
 function renderTimers() {
   timerList.innerHTML = "";
   timers.forEach((timer, index) => {
