@@ -86,7 +86,13 @@ function startTimer(index) {
     viewerTimer.textContent = `${String(mins).padStart(2, "0")}:${String(
       secs
     ).padStart(2, "0")}`;
-    if (totalSeconds <= 0) clearInterval(timerInterval);
+
+    if (totalSeconds <= 0) {
+      clearInterval(timerInterval);
+      // Tambahkan pesan otomatis saat waktu habis
+      textFromPart1.textContent = "WAKTU TELAH HABIS";
+      ShowMessageController.textContent = "WAKTU TELAH HABIS";
+    }
     totalSeconds--;
   }
 
