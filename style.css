@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.timer-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 6px 6px 12px 0;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: #eef2f7;
+  border-radius: 6px;
+}
+
+.message-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  min-height: 40px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.scroll-box {
+  background-color: #f9f9f9;
+  padding: 10px;
+  height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+}
+
+.reset-btn {
+  background-color: #d9534f;
+  color: white;
+  margin-top: 10px;
+}
+
+.reset-btn:hover {
+  background-color: #c9302c;
+}
+
+button.active {
+  background-color: #f0ad4e;
+}
+
+button.paused {
+  background-color: #d9534f;
+}
